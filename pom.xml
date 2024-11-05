@@ -19,8 +19,8 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>org.apache.spark</groupId>
-  <artifactId>spark-streaming-sql-kinesis-connector_2.12</artifactId>
-  <version>1.4.0</version>
+  <artifactId>spark-streaming-sql-kinesis-connector_2.13</artifactId>
+  <version>1.5.0</version>
   <packaging>jar</packaging>
   <name>Spark Structured Streaming Kinesis Connector</name>
   <description>Connector to read from and write into Kinesis from Structured Streaming Applications</description>
