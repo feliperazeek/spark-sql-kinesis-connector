@@ -1,0 +1,22 @@
+image: ${CI_REGISTRY}/product-intelligence/warp_ci/warp_ci_java11:2696068
+
+stages:
+    - build
+    - release
+
+build:
+    stage: build
+    tags:
+        - pi-pipeline-streaming-dev
+    script:
+        - mvn compile package
+
+publish:
+    stage: release
+    tags:
+        - pi-pipeline-streaming-dev
+    script:
+        - mvn publish
+    when:
+        manual
+
